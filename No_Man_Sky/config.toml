@@ -1,0 +1,5 @@
+baseURL = "https://namikxgithub.github.io"
+title   = "No_Man_Sky"
+languageCode = "en-us"
+theme = "dimension"
+

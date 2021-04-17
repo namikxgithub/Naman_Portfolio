@@ -1,0 +1,4 @@
+[submodule "No_Man_Sky/public"]
+	path = No_Man_Sky/public
+	url = git@github.com:namikxgithub/namikxgithub.github.io.git
+	branch = main
