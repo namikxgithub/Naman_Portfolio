@@ -1,0 +1,31 @@
+<style>
+:root {
+  --scroll-blur: 0px;
+  --global-bg: url("/lab.jpg");
+}
+body {
+  background: none;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(8, 12, 22, 0.78), rgba(18, 34, 68, 0.5)),
+    var(--global-bg) center/cover no-repeat fixed;
+  filter: blur(var(--scroll-blur, 0px));
+  z-index: -1;
+}
+.main-menu .logo {
+  max-height: 6rem;
+  max-width: 6rem;
+}
+.main-menu a.text-base {
+  font-size: 1.3rem !important;
+  font-weight: 800;
+}
+.main-menu nav a {
+  font-size: 1.25rem !important;
+  font-weight: 800;
+}
+</style>

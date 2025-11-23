@@ -1,5 +1,6 @@
 ---
 title: What's New
+slug: whats-new
 ---
 
 - [I, Arduino](#i-arduino)

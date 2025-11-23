@@ -1,19 +1,18 @@
- #!/bin/bash
+#!/bin/bash
+set -e
 
-hugo -t dimension
+hugo -t blowfish
 
-cd public 
-
+cd public
 git add .
 
-msg = "rebuilding site"
+msg="rebuilding site $(date)"
 
-# if [ $# -eq 1 ]
-#   then msg = "$1"
+if [ $# -eq 1 ]; then
+  msg="$1"
+fi
 
-# fi 
-git commit -m msg
-
+git commit -m "$msg"
 git push origin main
 
 cd ..

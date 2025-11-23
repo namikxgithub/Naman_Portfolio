@@ -1,0 +1,10 @@
+<script>
+(() => {
+  const updateBlur = () => {
+    const b = Math.min(window.scrollY / 80, 14);
+    document.documentElement.style.setProperty("--scroll-blur", `${b}px`);
+  };
+  updateBlur();
+  window.addEventListener("scroll", updateBlur, { passive: true });
+})();
+</script>

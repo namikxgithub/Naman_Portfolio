@@ -1,5 +1,59 @@
 baseURL = "https://namikxgithub.github.io"
-title   = "No_Man_Sky"
+title   = "Naman Malik"
 languageCode = "en-us"
-theme = "dimension"
+theme = "blowfish"
+enableRobotsTXT = true
 
+[pagination]
+  pagerSize = 10
+
+[params]
+  logo = "logo-removebg-preview.png"
+  description = "Robotics engineer focused on ROS/ROS2, autonomy, perception and field-ready builds."
+  defaultAppearance = "auto"
+  colorScheme = "blue"
+  hideFooter = false
+  disableTextInHeader = false
+
+  [params.article]
+    showDate = false
+    showDateUpdated = false
+    showAuthor = false
+    showReadingTime = false
+    showWordCount = false
+    showBreadcrumbs = false
+
+  [params.contact]
+    linkedin = "https://www.linkedin.com/in/naman-malik-495664133"
+    github = "https://github.com/namikxgithub"
+    youtube = "https://www.youtube.com/@atom-robotics"
+
+  [params.homepage]
+    layout = "page"
+
+[menu]
+
+  [[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects & Research"
+    pageRef = "/Projects"
+    weight = 3
+
+  [[menu.main]]
+    name = "Talks & Blogs"
+    url = "/#talks-blogs"
+    weight = 4
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
